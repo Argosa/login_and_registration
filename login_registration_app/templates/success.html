@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>You have successfully added a user...</title>
+</head>
+<body>
+    <div class='container bg-light'>
+        <h1>Success</h1>
+        <h2>Welcome {{ user.first_name }} {{ user.last_name }}</h2>
+        <h2>Your email is: {{ user.user_email }}</h2>
+        <h2>Your Password is: {{ user.password }} You should really consider a better website</h2>
+        <a href='/logout'>logout</a>
+    </div>
+</body>
+</html>
